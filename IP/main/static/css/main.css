@@ -17,7 +17,7 @@ aside > img {
 }
 aside > .logo {
     font-size: 35px;
-    margin-left: 18px;
+    margin-left: 15px;
     font-weight: bold;
     position: relative;
     top: 15px;
@@ -32,7 +32,7 @@ aside > ul > a {
     font-size: 25px;
     color: #fffafa;
     display: block;
-    margin-top: 50px;
+    margin-top: 40px;
     transition: transform 0.5s ease;
 }
 aside > ul > li:hover,
@@ -44,7 +44,15 @@ main > .features {
     float: left;
     margin-top: 100px;
     text-align: center;
-    width: 75%;
+    width: 80%;
 }
-main > .features > h1 { font-size: 50px; }
-main > .features > p { max-width: 400px; margin: 20px auto; }
+main > .features > h1 { font-size: 50px; position: relative; left: 35px; }
+main > .features > p { max-width: 1000px; margin: 20px 0; position: relative; left: 70px; }
+
+.alert-warning {
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: left;
+}

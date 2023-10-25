@@ -7,17 +7,16 @@
 {% block content %}
     <div class="features">
         <h1>{{ title }}</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptas, ea dolorem similique fuga labore reiciendis earum dolor inventore eaque?</p>
-        <button class="btn btn-warning">На страницу про нас</button><br>
-
-        {% for element in values %}
-            {% if element == 'Hello' %}
-                <p>{{ element|upper }}</p>
-            {% endif %}
-        {% endfor %}
-
-        {% for element in obj %}
-            <p>{{ element }}</p>
-        {% endfor %}
+        {% if news %}
+            {% for element in news %}
+                <div class="alert alert-info">
+                    <h3>{{ element.title }}</h3>
+                    <p>{{ element.anons }}</p>
+                    <small>{{ element.date }}</small>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>На сайте ещё не бало выгруженно ни одной новости.</p>
+        {% endif %}
     </div>
 {% endblock content %}
