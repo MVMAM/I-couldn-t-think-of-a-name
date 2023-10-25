@@ -7,7 +7,7 @@ aside {
     background-color: #181818;
     width: 20%;
     padding: 2.5%;
-    height: 100vh;
+    height: 115vh;
     border-right: solid 5px #4d4d4d;
 }
 aside > img {
@@ -29,7 +29,7 @@ aside > h3 {
 aside > ul { list-style: none; }
 aside > ul > a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: 15px;
     color: #fffafa;
     display: block;
     margin-top: 40px;
@@ -45,14 +45,24 @@ main > .features {
     margin-top: 100px;
     text-align: center;
     width: 80%;
+    height: 100vh;
 }
 main > .features > h1 { font-size: 50px; position: relative; left: 35px; }
 main > .features > p { max-width: 1000px; margin: 20px 0; position: relative; left: 70px; }
 
 .alert-warning {
+    transition: transform 0.5s ease;
     float: left;
     clear: both;
     width: 400px;
     margin: 20px 34%;
     text-align: left;
+}
+.alert-warning:hover {
+    transform: scale(1.20);
+}
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
 }
