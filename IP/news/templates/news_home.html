@@ -12,7 +12,8 @@
                 <div class="alert alert-warning">
                     <h3>{{ element.title }}</h3>
                     <p>{{ element.anons }}</p>
-                    <small>{{ element.date }}</small>
+                    <small>{{ element.date }}</small><br><br>
+                    <a href="{% url 'news_detail' element.id %}" class="btn btn-sm col-sm-4 btn-warning">Прочитать детальнее</a>
                 </div>
             {% endfor %}
         {% else %}
