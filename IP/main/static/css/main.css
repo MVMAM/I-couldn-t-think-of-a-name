@@ -22,14 +22,10 @@ aside > .logo {
     position: relative;
     top: 15px;
 }
-aside > h3 {
-    margin-top: 50px;
-    font-size: 30px;
-}
 aside > ul { list-style: none; }
 aside > ul > a {
     text-decoration: none;
-    font-size: 15px;
+    font-size: 25px;
     color: #fffafa;
     display: block;
     margin-top: 40px;
